@@ -1,5 +1,4 @@
 # Phase-1-Project
-phase 1 project
 In this project I will be building an application that allows a user to
  to learn more about a fruit. This is very important since it can help a user to make decision on which fruit to use based on nutritional value per 100g.
 
