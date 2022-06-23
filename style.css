@@ -1,0 +1,73 @@
+body {
+    background-color: #ebebeb;
+  }
+  
+  .heading {
+    background-color: #333333;
+    margin-bottom: 20px;
+    padding: 5px 0px 5px 15px;
+  
+  }
+
+  .title {
+    color: #3e8fde;
+    margin-left: 300px;
+    
+  }
+
+  #subtitle {
+    color: white;
+    margin-left: 300px;
+    color: forestgreen;
+  }
+
+  #fruit-heading {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: forestgreen;
+    margin-left: 0px;
+  }
+  
+  .name {
+    background-color: papayawhip;
+    padding: 5px;
+    color: lightseagreen;
+  }
+
+  .nutrition {
+    background-color: royalblue;
+    padding: 5px;
+    color: white;
+  }
+
+
+  
+  .content {
+    color: #3e8fde;
+    margin-left: 0px;
+    
+  }
+
+  
+  #showing {
+    margin-left: 20px;
+    width: 250px;
+  }
+  
+  #fruits li::before {
+    content: "";
+  }
+  
+  .fruit {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: forestgreen;
+  }
+  
+
+  
+  #fruit-info {
+    padding-bottom: 15px;
+
+    
+  }
