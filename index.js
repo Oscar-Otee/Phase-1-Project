@@ -41,24 +41,26 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     // getData()
 
+    getElementById()
 
 
 
-    fetch(BASE_URL, {
-      method: 'POST', // or 'PUT'
-      headers: {
-        'Content-Type': 'application/json',
-        "Accept": "application/json"
-      },
-      body: JSON.stringify(getData()),
-   })
-   .then(response => response.json())
-   .then(data => {
-    console.log('Success:', data);
-   })
-   .catch((error) => {
-    console.error('Error:', error);
-  });
+
+//     fetch(BASE_URL, {
+//       method: 'POST', // or 'PUT'
+//       headers: {
+//         'Content-Type': 'application/json',
+//         "Accept": "application/json"
+//       },
+//       body: JSON.stringify(getData()),
+//    })
+//    .then(response => response.json())
+//    .then(data => {
+//     console.log('Success:', data);
+//    })
+//    .catch((error) => {
+//     console.error('Error:', error);
+//   });
  
 
 })
@@ -153,18 +155,8 @@ function getFruits(){
 
 
 
-  function getData() {
-    const data = {};
-    data["genus"] = document.getElementById("new-genus").value
-    data["name"] = document.getElementById("new-name").value;
-    data["family"] = document.getElementById("new-family").value;
-    data["order"] = document.getElementById("new-order").value;
-    data["nutritions"]["carbohydrates"] = document.getElementById("new-carbohydrates").value;
-    data["nutritions"]["protein"] = document.getElementById("new-protein").value;
-    data["nutritions"]["fat"] = document.getElementById("new-fat").value;
-    data["nutritions"]["calories"] = document.getElementById("new-calories").value;
-    data["nutritions"]["sugar"] = document.getElementById("new-sugar").value;
-    return data;
+  function getFormData() {
+    document.getElementById("new-fruit").value;
   }
 
 
