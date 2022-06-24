@@ -27,25 +27,30 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
   document.getElementById("add-new-fruit").addEventListener("submit", (e)=>{
     e.preventDefault();
-    const data = {};
-    data["genus"] = document.getElementById("new-genus").value
-    data["name"] = document.getElementById("new-name").value;
-    data["family"] = document.getElementById("new-family").value;
-    data["order"] = document.getElementById("new-order").value;
-    data["carbohydrates"] = document.getElementById("new-carbohydrates").value;
-    data["protein"] = document.getElementById("new-protein").value;
-    data["fat"] = document.getElementById("new-fat").value;
-    data["calories"] = document.getElementById("new-calories").value;
-    data["sugar"] = document.getElementById("new-sugar").value;
-    data["comment"] = document.getElementById("new-comment").value;
+    // const data = {};
+    // data["genus"] = document.getElementById("new-genus").value
+    // data["name"] = document.getElementById("new-name").value;
+    // data["family"] = document.getElementById("new-family").value;
+    // data["order"] = document.getElementById("new-order").value;
+    // data["carbohydrates"] = document.getElementById("new-carbohydrates").value;
+    // data["protein"] = document.getElementById("new-protein").value;
+    // data["fat"] = document.getElementById("new-fat").value;
+    // data["calories"] = document.getElementById("new-calories").value;
+    // data["sugar"] = document.getElementById("new-sugar").value;
+    // data["comment"] = document.getElementById("new-comment").value;
+
+    // getData()
+
+
 
 
     fetch(BASE_URL, {
       method: 'POST', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
+        "Accept": "application/json"
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(getData()),
    })
    .then(response => response.json())
    .then(data => {
@@ -70,6 +75,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let calories = document.getElementById("new-calories").value = "";
     let sugar = document.getElementById("new-sugar").value = "";
     let comment = document.getElementById("new-comment").value = "";
+
   
     
   })
@@ -150,4 +156,23 @@ function getFruits(){
         )
       .catch( error => {throw error});
   }
+
+
+
+
+
+  function getData() {
+    const data = {};
+    data["genus"] = document.getElementById("new-genus").value
+    data["name"] = document.getElementById("new-name").value;
+    data["family"] = document.getElementById("new-family").value;
+    data["order"] = document.getElementById("new-order").value;
+    data["nutritions"]["carbohydrates"] = document.getElementById("new-carbohydrates").value;
+    data["nutritions"]["protein"] = document.getElementById("new-protein").value;
+    data["nutritions"]["fat"] = document.getElementById("new-fat").value;
+    data["nutritions"]["calories"] = document.getElementById("new-calories").value;
+    data["nutritions"]["sugar"] = document.getElementById("new-sugar").value;
+    return data;
+  }
+
 
