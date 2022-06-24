@@ -1,8 +1,21 @@
 # Phase-1-Project
-In this project I will be building an application that allows a user to
- to learn more about a fruit. This is very important since it can help a user to make decision on which fruit to use based on nutritional value per 100g.
+In this project covers building an application that allows a user to
+ to learn more about a fruit such as knowing the fruit name in the list and can have information about it such as genus, family, order and more importantly nutritional value content per 100g such as carbohydrates, protein, fat, sugar and calories which are very important for making decision when a user want to purchase. 
 
 
+## Technologies Used
+CSS for styling.
+HTML for structure.
+JavaScript for functionality
+Json server
+
+
+## Files created
+db.json
+index.js
+index.html
+style.css
+README.md
 
 ## Setup
 
@@ -88,6 +101,7 @@ As a user, I can:
     }
    ]
    ```
+3. Click the name of the fruit and see it details on the right.
 
 3. Add a fruit.
 
