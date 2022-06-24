@@ -39,9 +39,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
     // data["sugar"] = document.getElementById("new-sugar").value;
     // data["comment"] = document.getElementById("new-comment").value;
 
-    // getData()
+    getFormData()
 
-    getElementById()
 
 
 
@@ -68,7 +67,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
   document.getElementById("reset-form").addEventListener("click", (e)=>{
     e.preventDefault();
     
-    document.getElementById("new-fruit").reset()
+    getFormData().reset();
 
   
     
