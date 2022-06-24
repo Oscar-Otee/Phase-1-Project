@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     e.preventDefault();
     let comment = document.getElementById("comment").value
 
-    //console.log("DATA")
+   
   })
 
 
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     e.preventDefault();
     let comment = document.getElementById("comment").value = ""
 
-    //console.log("DATA")
+    
   })
   
 })
