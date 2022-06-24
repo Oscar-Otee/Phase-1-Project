@@ -37,8 +37,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     data["fat"] = document.getElementById("new-fat").value;
     data["calories"] = document.getElementById("new-calories").value;
     data["sugar"] = document.getElementById("new-sugar").value;
-    data["comment"] = document.getElementById("new-comment").value = "";
-
+    data["comment"] = document.getElementById("new-comment").value;
 
 
     fetch(BASE_URL, {
