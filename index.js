@@ -154,8 +154,3 @@ function getFruits(){
 
 
 
-  function getFormData() {
-    document.getElementById("new-fruit").reset();
-  }
-
-
