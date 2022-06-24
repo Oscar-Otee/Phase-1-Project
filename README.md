@@ -4,10 +4,10 @@ This project covers building an application that allows a user to
 
 
 ## Technologies Used
-CSS for styling.
-HTML for structure.
-JavaScript for functionality
-Json server
+-CSS for styling.
+-HTML for structure.
+-JavaScript for functionality
+-Json server
 
 
 ## Files created
