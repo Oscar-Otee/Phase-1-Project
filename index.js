@@ -65,16 +65,18 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
   document.getElementById("delete").addEventListener("click", (e)=>{
     e.preventDefault();
-    let genus = document.getElementById("new-genus").value = "";
-    let name = document.getElementById("new-name").value ="";
-    let family = document.getElementById("new-family").value = "";
-    let order = document.getElementById("new-order").value = "";
-    let carbohydrates = document.getElementById("new-carbohydrates").value = "";
-    let protein = document.getElementById("new-protein").value = "";
-    let fat = document.getElementById("new-fat").value = "";
-    let calories = document.getElementById("new-calories").value = "";
-    let sugar = document.getElementById("new-sugar").value = "";
-    let comment = document.getElementById("new-comment").value = "";
+    // let genus = document.getElementById("new-genus").value = "";
+    // let name = document.getElementById("new-name").value ="";
+    // let family = document.getElementById("new-family").value = "";
+    // let order = document.getElementById("new-order").value = "";
+    // let carbohydrates = document.getElementById("new-carbohydrates").value = "";
+    // let protein = document.getElementById("new-protein").value = "";
+    // let fat = document.getElementById("new-fat").value = "";
+    // let calories = document.getElementById("new-calories").value = "";
+    // let sugar = document.getElementById("new-sugar").value = "";
+    // let comment = document.getElementById("new-comment").value = "";
+
+    document.getElementById("new-fruit").reset()
 
   
     
