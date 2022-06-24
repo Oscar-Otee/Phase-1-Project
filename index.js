@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
   document.getElementById("reset-form").addEventListener("click", (e)=>{
     e.preventDefault();
     
-    document.getElementById("new-fruit").value.reset();
+    document.getElementById("new-fruit").reset();
 
   
     
@@ -155,7 +155,7 @@ function getFruits(){
 
 
   function getFormData() {
-    document.getElementById("new-fruit").value;
+    document.getElementById("new-fruit").reset();
   }
 
 
