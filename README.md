@@ -11,11 +11,11 @@ This project covers building an application that allows a user to
 
 
 ## Files created
-db.json
-index.js
-index.html
-style.css
-README.md
+-db.json
+-index.js
+-index.html
+-style.css
+-README.md
 
 ## Setup
 
