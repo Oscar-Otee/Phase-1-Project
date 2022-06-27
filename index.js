@@ -102,9 +102,7 @@ function submitForm (handleSubmit) {
 
 
 function handleSubmit(e) {
-  e.preventDefault()
-
-
+  e.preventDefault();
   let genus = document.getElementById("new-genus");
   let name = document.getElementById("new-name");
   let id = document.getElementById("new-id");
@@ -116,7 +114,6 @@ function handleSubmit(e) {
   let calories = document.getElementById("new-calories");
   let sugar = document.getElementById("new-sugar");
 
-      
   let fruitObj = {
     genus: genus.value, 
     name: name.value,
@@ -131,7 +128,7 @@ function handleSubmit(e) {
       sugar: sugar.value,
       }};
 
-        adoptFruit(fruitObj)
+        adoptFruit(fruitObj);
     }
 
 
