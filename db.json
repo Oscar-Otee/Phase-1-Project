@@ -3,7 +3,7 @@
     {
     "genus": "Malus",
     "name": "Apple",
-    "id": 6,
+    "id": 1,
     "family": "Rosaceae",
     "order": "Rosales",
     "nutritions": {
@@ -16,7 +16,7 @@
 }, {
     "genus": "Prunus",
     "name": "Apricot",
-    "id": 35,
+    "id": 2,
     "family": "Rosaceae",
     "order": "Rosales",
     "nutritions": {
@@ -29,7 +29,7 @@
 }, {
     "genus": "Musa",
     "name": "Banana",
-    "id": 1,
+    "id": 3,
     "family": "Musaceae",
     "order": "Zingiberales",
     "nutritions": {
@@ -42,7 +42,7 @@
 }, {
     "genus": "Rubus",
     "name": "Blackberry",
-    "id": 64,
+    "id": 4,
     "family": "Rosaceae",
     "order": "Rosales",
     "nutritions": {
@@ -55,7 +55,7 @@
 }, {
     "genus": "Fragaria",
     "name": "Blueberry",
-    "id": 33,
+    "id": 5,
     "family": "Rosaceae",
     "order": "Rosales",
     "nutritions": {
@@ -68,7 +68,7 @@
 }, {
     "genus": "Prunus",
     "name": "Cherry",
-    "id": 9,
+    "id": 6,
     "family": "Rosaceae",
     "order": "None",
     "nutritions": {
@@ -81,7 +81,7 @@
 }, {
     "genus": "Durio",
     "name": "Durian",
-    "id": 60,
+    "id": 7,
     "family": "Malvaceae",
     "order": "Malvales",
     "nutritions": {
@@ -94,7 +94,7 @@
 }, {
     "genus": "Ficus",
     "name": "Fig",
-    "id": 68,
+    "id": 8,
     "family": "Moraceae",
     "order": "Rosales",
     "nutritions": {
@@ -107,7 +107,7 @@
 }, {
     "genus": "Ribes",
     "name": "Gooseberry",
-    "id": 69,
+    "id": 9,
     "family": "Grossulariaceae",
     "order": "Saxifragales",
     "nutritions": {
@@ -120,7 +120,7 @@
 }, {
     "genus": "Vitis",
     "name": "Grapes",
-    "id": 47,
+    "id": 10,
     "family": "Vitaceae",
     "order": "Vitales",
     "nutritions": {
@@ -133,7 +133,7 @@
 }, {
     "genus": "Malus",
     "name": "GreenApple",
-    "id": 72,
+    "id": 11,
     "family": "Rosaceae",
     "order": "Rosales",
     "nutritions": {
@@ -146,7 +146,7 @@
 }, {
     "genus": "Psidium",
     "name": "Guava",
-    "id": 37,
+    "id": 12,
     "family": "Myrtaceae",
     "order": "Myrtales",
     "nutritions": {
@@ -159,7 +159,7 @@
 }, {
     "genus": "Apteryx",
     "name": "Kiwi",
-    "id": 66,
+    "id": 13,
     "family": "Actinidiaceae",
     "order": "Struthioniformes",
     "nutritions": {
@@ -172,7 +172,7 @@
 }, {
     "genus": "Citrus",
     "name": "Lemon",
-    "id": 26,
+    "id": 14,
     "family": "Rutaceae",
     "order": "Sapindales",
     "nutritions": {
@@ -185,7 +185,7 @@
 }, {
     "genus": "Citrus",
     "name": "Lime",
-    "id": 44,
+    "id": 15,
     "family": "Rutaceae",
     "order": "Sapindales",
     "nutritions": {
@@ -198,7 +198,7 @@
 }, {
     "genus": "Vaccinium",
     "name": "Lingonberry",
-    "id": 65,
+    "id": 16,
     "family": "Ericaceae",
     "order": "Ericales",
     "nutritions": {
@@ -211,7 +211,7 @@
 }, {
     "genus": "Litchi",
     "name": "Lychee",
-    "id": 67,
+    "id": 17,
     "family": "Sapindaceae",
     "order": "Sapindales",
     "nutritions": {
@@ -224,7 +224,7 @@
 }, {
     "genus": "Mangifera",
     "name": "Mango",
-    "id": 27,
+    "id": 18,
     "family": "Anacardiaceae",
     "order": "Sapindales",
     "nutritions": {
@@ -237,7 +237,7 @@
 }, {
     "genus": "Cucumis",
     "name": "Melon",
-    "id": 41,
+    "id": 19,
     "family": "Cucurbitaceae",
     "order": "Cucurbitaceae",
     "nutritions": {
@@ -250,7 +250,7 @@
 }, {
     "genus": "Citrus",
     "name": "Orange",
-    "id": 2,
+    "id": 20,
     "family": "Rutaceae",
     "order": "Sapindales",
     "nutritions": {
@@ -263,7 +263,7 @@
 }, {
     "genus": "Carica",
     "name": "Papaya",
-    "id": 42,
+    "id": 21,
     "family": "Caricaceae",
     "order": "Caricacea",
     "nutritions": {
@@ -276,7 +276,7 @@
 }, {
     "genus": "Passiflora",
     "name": "Passionfruit",
-    "id": 70,
+    "id": 22,
     "family": "Passifloraceae",
     "order": "Malpighiales",
     "nutritions": {
@@ -289,7 +289,7 @@
 }, {
     "genus": "Pyrus",
     "name": "Pear",
-    "id": 4,
+    "id": 23,
     "family": "Rosaceae",
     "order": "Rosales",
     "nutritions": {
@@ -302,7 +302,7 @@
 }, {
     "genus": "Diospyros",
     "name": "Persimmon",
-    "id": 52,
+    "id": 24,
     "family": "Ebenaceae",
     "order": "Rosales",
     "nutritions": {
@@ -315,7 +315,7 @@
 }, {
     "genus": "Ananas",
     "name": "Pineapple",
-    "id": 10,
+    "id": 25,
     "family": "Bromeliaceae",
     "order": "Poales",
     "nutritions": {
@@ -328,7 +328,7 @@
 }, {
     "genus": "Prunus",
     "name": "Plum",
-    "id": 71,
+    "id": 26,
     "family": "Rosaceae",
     "order": "Rosales",
     "nutritions": {
@@ -341,7 +341,7 @@
 }, {
     "genus": "Rubus",
     "name": "Raspberry",
-    "id": 23,
+    "id": 27,
     "family": "Rosaceae",
     "order": "Rosales",
     "nutritions": {
@@ -354,7 +354,7 @@
 }, {
     "genus": "Fragaria",
     "name": "Strawberry",
-    "id": 3,
+    "id": 28,
     "family": "Rosaceae",
     "order": "Rosales",
     "nutritions": {
@@ -367,7 +367,7 @@
 }, {
     "genus": "Solanum",
     "name": "Tomato",
-    "id": 5,
+    "id": 29,
     "family": "Solanaceae",
     "order": "Solanales",
     "nutritions": {
@@ -380,7 +380,7 @@
 }, {
     "genus": "Spondias",
     "name": "Umbu",
-    "id": 73,
+    "id": 30,
     "family": "Anacardiaceae",
     "order": "0",
     "nutritions": {
@@ -393,7 +393,7 @@
 }, {
     "genus": "Citrullus",
     "name": "Watermelon",
-    "id": 25,
+    "id": 31,
     "family": "Cucurbitaceae",
     "order": "Cucurbitales",
     "nutritions": {
@@ -404,5 +404,9 @@
         "sugar": 6
     }
 }
+
 ]
 }
+
+
+

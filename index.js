@@ -1,5 +1,5 @@
 
-const BASE_URL = "http://localhost:3000/fruits/";
+let BASE_URL = "http://localhost:3000/fruits/";
 
 
 
@@ -16,87 +16,37 @@ class Fruit{
 }
 
 
-
 document.addEventListener('DOMContentLoaded', ()=>{
   getFruits();
   loadFruit("1");
+  submitForm();
 
-
-
-
-
-  document.getElementById("add-new-fruit").addEventListener("submit", (e)=>{
-    e.preventDefault();
-    // const data = {};
-    // data["genus"] = document.getElementById("new-genus").value
-    // data["name"] = document.getElementById("new-name").value;
-    // data["family"] = document.getElementById("new-family").value;
-    // data["order"] = document.getElementById("new-order").value;
-    // data["carbohydrates"] = document.getElementById("new-carbohydrates").value;
-    // data["protein"] = document.getElementById("new-protein").value;
-    // data["fat"] = document.getElementById("new-fat").value;
-    // data["calories"] = document.getElementById("new-calories").value;
-    // data["sugar"] = document.getElementById("new-sugar").value;
-    // data["comment"] = document.getElementById("new-comment").value;
-
-    document.getElementById("new-fruit").value;
-
-
-
-
-
-//     fetch(BASE_URL, {
-//       method: 'POST', // or 'PUT'
-//       headers: {
-//         'Content-Type': 'application/json',
-//         "Accept": "application/json"
-//       },
-//       body: JSON.stringify(getData()),
-//    })
-//    .then(response => response.json())
-//    .then(data => {
-//     console.log('Success:', data);
-//    })
-//    .catch((error) => {
-//     console.error('Error:', error);
-//   });
- 
-
-})
 
   document.getElementById("reset-form").addEventListener("click", (e)=>{
     e.preventDefault();
-    
     document.getElementById("new-fruit").reset();
-
-  
-    
   })
 
 
   document.getElementById("add-comment").addEventListener("submit", (e)=>{
     e.preventDefault();
-    let comment = document.getElementById("comment").value
-
-   
+    let comment = document.getElementById("comment").value;
   })
 
 
-  document.getElementById("delete-comment").addEventListener("click", (e)=>{
+  document.getElementById("reset-comment").addEventListener("click", (e)=>{
     e.preventDefault();
-    let comment = document.getElementById("comment").value = ""
-
-    
+    let comment = document.getElementById("comment").value = ""; 
   })
   
+
+
 })
-
-
 
 
 function getFruits(){
 
-  const fruitHeadear = document.getElementById("fruits");
+  let fruitHeadear = document.getElementById("fruits");
   
   fetch(BASE_URL)
     .then( response => response.json() )
@@ -124,31 +74,91 @@ function getFruits(){
 }
 
 
-
-
-  function loadFruit(id){
-
-    fetch(BASE_URL+id)
-      .then( response => response.json() )
-      .then( (fruit) => {
-        let fruitInfo = new Fruit(fruit.id, fruit.genus, fruit.name, fruit.family, fruit.order, fruit.nutritions);
-        //let availableTickets = filmInfo.capacity - filmInfo.tickets_sold;
-            document.getElementById("name").innerText = fruitInfo.name;
-            document.getElementById("genus").innerText = fruitInfo.genus;
-            document.getElementById("family").innerText = fruitInfo.family;
-            document.getElementById("order").innerText = fruitInfo.order;
-            document.getElementById("carbohydrates").innerText = fruitInfo.nutritions.carbohydrates;
-            document.getElementById("protein").innerText = fruitInfo.nutritions.protein;
-            document.getElementById("fat").innerText = fruitInfo.nutritions.fat;
-            document.getElementById("calories").innerText = fruitInfo.nutritions.calories;
-            document.getElementById("sugar").innerText = fruitInfo.nutritions.sugar;
+function loadFruit(id){
+  fetch(BASE_URL+id)
+  .then( response => response.json() )
+  .then( (fruit) => {
+    let fruitInfo = new Fruit(fruit.id, fruit.genus, fruit.name, fruit.family, fruit.order, fruit.nutritions);
+    document.getElementById("name").innerText = fruitInfo.name;
+    document.getElementById("genus").innerText = fruitInfo.genus;
+    document.getElementById("family").innerText = fruitInfo.family;
+    document.getElementById("order").innerText = fruitInfo.order;
+    document.getElementById("carbohydrates").innerText = fruitInfo.nutritions.carbohydrates;
+    document.getElementById("protein").innerText = fruitInfo.nutritions.protein;
+    document.getElementById("fat").innerText = fruitInfo.nutritions.fat;
+    document.getElementById("calories").innerText = fruitInfo.nutritions.calories;
+    document.getElementById("sugar").innerText = fruitInfo.nutritions.sugar;
            
             
-          }
-  
-        )
-      .catch( error => {throw error});
   }
+  )
+  .catch( error => {throw error});
+}
+
+
+function submitForm (handleSubmit) {
+  document.getElementById("add-new-fruit").addEventListener("submit", handleSubmit)
+}
+
+
+function handleSubmit(e) {
+  e.preventDefault()
+
+
+  let genus = document.getElementById("new-genus");
+  let name = document.getElementById("new-name");
+  let id = document.getElementById("new-id");
+  let family = document.getElementById("new-family");
+  let order = document.getElementById("new-order");
+  let carbohydrates = document.getElementById("new-carbohydrates");
+  let protein = document.getElementById("new-protein");
+  let fat = document.getElementById("new-fat");
+  let calories = document.getElementById("new-calories");
+  let sugar = document.getElementById("new-sugar");
+
+      
+  let fruitObj = {
+    genus: genus.value, 
+    name: name.value,
+    id: id.value, 
+    family: family.value, 
+    order: order.value, 
+    nutritions: {
+      carbohydrates: carbohydrates.value, 
+      protein: protein.value, 
+      fat: fat.value, 
+      calories: calories.value, 
+      sugar: sugar.value,
+      }};
+
+        adoptFruit(fruitObj)
+    }
+
+
+    function adoptFruit (fruitObj) {
+      fetch("http://localhost:3000/fruits", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(fruitObj),
+     })
+     .then(response => response.json())
+     .then(fruit => {
+      console.log(fruit);
+     })
+     .catch((error) => {
+      console.error('Error:', error);
+     })
+
+
+    }
+
+
+
+
+
 
 
 

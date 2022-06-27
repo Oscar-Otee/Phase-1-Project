@@ -1,6 +1,6 @@
 # Project Description
 This project covers building an application that allows a user to
- to learn more about a fruit such as knowing the fruit name in the list and can have information about it such as genus, family, order and more importantly nutritional value content per 100g such as carbohydrates, protein, fat, sugar and calories after clicking its name which are very important for making decision when a user want to purchase a fruit. 
+to learn more about a fruit such as knowing the fruit name in the list and can have information about it such as genus, family, order and more importantly nutritional value content per 100g such as carbohydrates, protein, fat, sugar and calories after clicking its name which are very important for making decision when a user want to purchase a fruit. 
 
 
 ## Technologies Used

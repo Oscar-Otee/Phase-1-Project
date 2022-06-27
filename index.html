@@ -37,6 +37,8 @@
           <input type="text" name="genus" id="new-genus" placeholder="genus" style="color: black;"/><br>
           <label for="name">Name: </label><br>
           <input type="text" name="name" id="new-name" placeholder="name" style="color: black;"/><br>
+          <label for="id">ID: </label><br>
+          <input type="number" name="id" id="new-id" placeholder="id" style="color: black;"/><br>
           <label for="family">Family: </label><br>
           <input type="text" name="family" id="new-family" placeholder="family" style="color: black;"/><br>
           <label for="order">Order: </label><br>
@@ -51,8 +53,6 @@
           <input type="text" name="calories" id="new-calories" placeholder="calories" style="color: black;"/><br>
           <label for="sugar">Sugar: </label><br>
           <input type="text" name="sugar" id="new-sugar" placeholder="sugar" style="color: black;"/><br>
-          <label for="new-comment">Comment: </label><br>
-          <textarea name="new-comment" id="new-comment" placeholder="put your comment here" style="color: black;"></textarea><br>
           <input type="submit" value="Add" id="add-new-fruit" />
           <input type="button" id="reset-form" value="Reset Form" /><br>
         </form>
@@ -81,7 +81,7 @@
                 <label for="comment">Comment: </label>
                 <textarea name="comment" id="comment" style="width: 220px; color: black;"></textarea>
                 <input type="submit" value="Add" id="add-comment" />
-                <input type="button" id="delete-comment" value="Delete Comment"  />
+                <input type="button" id="reset-comment" value="Reset Comment"  />
               </form>
             </div>
           </div>
@@ -91,3 +91,5 @@
     <script src="index.js"></script>
   </body>
 </html>
+
+
