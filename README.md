@@ -34,6 +34,10 @@ Then, the `index.html` file was opened on my browser for running this applicatio
 The code was written in the `index.js` file. The base URL for my API was
 [http://localhost:3000](http://localhost:3000).
 
+The git hub page link is: 
+[https://oscar-otee.github.io/Phase-1-Project/]
+
+
 ## Core Deliverables
 
 As a user, I can:

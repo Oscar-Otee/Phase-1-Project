@@ -433,18 +433,6 @@
         "calories": 30,
         "sugar": 6
       }
-    },
-    {
-      "genus": "Citrus",
-      "name": "Tangarine",
-      "id": "32",
-      "family": "Rutaceae",
-      "order": "Sapindales",
-      "carbohydrates": "13.34",
-      "protein": "0.81",
-      "fat": "0.31",
-      "calories": "53",
-      "sugar": "10.58"
     }
   ]
 }
